@@ -7,17 +7,19 @@ import styled from "styled-components";
 const AboutSection = () => {
   return (
     <About>
-      <div className="description">
+      <Description>
         <div className="title">
-          <div className="hide">
+          <Hide>
             <h2>Be educated so that</h2>
-          </div>
-          <div className="hide">
-            <h2>you can change</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
+            <h2>
+              you <span>can change</span>
+            </h2>
+          </Hide>
+          <Hide>
             <h2>the world.</h2>
-          </div>
+          </Hide>
         </div>
 
         <p>
@@ -25,11 +27,11 @@ const AboutSection = () => {
           one.
         </p>
         <button>About US</button>
-      </div>
+      </Description>
 
-      <div className="image">
+      <Image>
         <img src={homeIntro} alt="man reading book" />
-      </div>
+      </Image>
     </About>
   );
 };
@@ -40,6 +42,23 @@ const About = styled.div`
   align-items: center;
   justify-content: space-around;
   padding: 5rem 10rem;
+`;
+
+const Description = styled.div`
+  flex: 1;
+  padding-right: 5rem;
+`;
+
+const Image = styled.div`
+  flex: 1;
+  overflow: hidden;
+  img {
+    height: 80vh;
+  }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default AboutSection;
