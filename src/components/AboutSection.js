@@ -1,11 +1,12 @@
 import React from "react";
-
 // import images
 import homeIntro from "../images/home_intro.jpg";
+// import styled components
+import styled from "styled-components";
 
 const AboutSection = () => {
   return (
-    <div>
+    <About>
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -29,8 +30,16 @@ const AboutSection = () => {
       <div className="image">
         <img src={homeIntro} alt="man reading book" />
       </div>
-    </div>
+    </About>
   );
 };
+
+// Styled components
+const About = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5rem 10rem;
+`;
 
 export default AboutSection;
