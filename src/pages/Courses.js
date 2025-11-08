@@ -30,6 +30,7 @@ const Courses = () => {
           <img src={javaScript} alt="javaScript" />
         </Link>
       </Course>
+      <p>Meni ochirib yubor</p>
     </StyledCourses>
   );
 };
