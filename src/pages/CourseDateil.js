@@ -1,12 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { useLocation } from "react-router-dom";
+import CourseState from "../courseState";
 
 const CourseDatil = () => {
+  const location = useLocation();
+  const url = location.pathname;
+  const [courses, setCourses] = useState(CourseState);
+  const [course, setCourse] = useState(null);
+
+  // useEffect
+  useEffect(() => {
+    const currentCourse = courses.filter(
+      (stateCourse) => stateCourse.url === url
+    );
+
+    setCourse(currentCourse[0]);
+  }, [courses, url]);
   return (
-    <div>
-      <h1>Course Destail</h1>
-    </div>
+    <>
+      {course && (
+        <Details>
+          <Header>
+            <h1>{course.title}</h1>
+            <img src={course.mainImg} alt="laptop" />
+          </Header>
+        </Details>
+      )}
+    </>
   );
 };
+
+const Details = styled.div``;
+const Header = styled.div``;
 
 export default CourseDatil;

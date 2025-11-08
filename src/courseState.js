@@ -12,7 +12,7 @@ const CourseState = () => {
       title: "Interaktive React",
       mainImg: react,
       seconddaryImg: react1,
-      url: "course/react",
+      url: "/courses/react",
       awards: [
         {
           title: "Lorem ipsum sit",
@@ -30,7 +30,7 @@ const CourseState = () => {
       title: "Interaktive Redux",
       mainImg: redux,
       seconddaryImg: redux1,
-      url: "course/react",
+      url: "/courses/redux",
       awards: [
         {
           title: "Lorem ipsum sit",
@@ -48,7 +48,7 @@ const CourseState = () => {
       title: "Interaktive JavaScript",
       mainImg: js,
       seconddaryImg: js1,
-      url: "course/jsvascript",
+      url: "/courses/javascript",
       awards: [
         {
           title: "Lorem ipsum sit",
@@ -64,3 +64,5 @@ const CourseState = () => {
     },
   ];
 };
+
+export default CourseState;
