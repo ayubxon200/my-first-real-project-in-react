@@ -4,9 +4,9 @@ import GlobalStyle from "./components/GlobalStyle";
 // import components
 import AboutUs from "./pages/AboutUs";
 import Nav from "./components/Nav";
-// Pages
 import Courses from "./pages/Courses";
 import ContactUs from "./pages/ContactUs";
+import CourseDatil from "./pages/CourseDateil";
 // React router dom
 import { Routes, Route } from "react-router-dom";
 
@@ -19,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" index element={<AboutUs />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/:id" element={<CourseDatil />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </div>
