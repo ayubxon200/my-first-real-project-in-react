@@ -24,6 +24,11 @@ const CourseState = () => {
           description:
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae nemo esse enim natus, libero sed debitis ad. Architecto, labore libero!",
         },
+        {
+          title: "Lorem ipsum sit",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae nemo esse enim natus, libero sed debitis ad. Architecto, labore libero!",
+        },
       ],
     },
     {
@@ -42,6 +47,11 @@ const CourseState = () => {
           description:
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae nemo esse enim natus, libero sed debitis ad. Architecto, labore libero!",
         },
+        {
+          title: "Lorem ipsum sit",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae nemo esse enim natus, libero sed debitis ad. Architecto, labore libero!",
+        },
       ],
     },
     {
@@ -50,6 +60,11 @@ const CourseState = () => {
       seconddaryImg: js1,
       url: "/courses/javascript",
       awards: [
+        {
+          title: "Lorem ipsum sit",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae nemo esse enim natus, libero sed debitis ad. Architecto, labore libero!",
+        },
         {
           title: "Lorem ipsum sit",
           description:
