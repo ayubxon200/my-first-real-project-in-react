@@ -2,6 +2,9 @@ import React from "react";
 // styles
 import { About } from "../Styles";
 import styled from "styled-components";
+import { LayoutGroup } from "framer-motion";
+// Toggle
+import Toggle from "./FaqToggle";
 
 const FaqSection = () => {
   return (
@@ -9,53 +12,55 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <div className="questions">
-        <h4>Can I learn programming from scratch on your platform?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias,
-            tempora.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      <LayoutGroup>
+        <Toggle title="Can I learn programming from scratch on your platform?">
+          <div className="questions">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestias, tempora.
+              </p>
+            </div>
+          </div>
+        </Toggle>
 
-      <div className="questions">
-        <h4>How much di I have to pay per month</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias,
-            tempora.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        <Toggle title="How much di I have to pay per month">
+          <div className="questions">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestias, tempora.
+              </p>
+            </div>
+          </div>
+        </Toggle>
 
-      <div className="questions">
-        <h4>Is it possible to pay in full in one go</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias,
-            tempora.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        <Toggle title="Is it possible to pay in full in one go">
+          <div className="questions">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestias, tempora.
+              </p>
+            </div>
+          </div>
+        </Toggle>
 
-      <div className="questions">
-        <h4>If I buy the course, can my brother and I also study?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias,
-            tempora.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        <Toggle title="If I buy the course, can my brother and I also study?">
+          <div className="questions">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestias, tempora.
+              </p>
+            </div>
+          </div>
+        </Toggle>
+      </LayoutGroup>
     </Faq>
   );
 };
